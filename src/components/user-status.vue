@@ -1,6 +1,8 @@
 <template>
     <div class="user-status">
-            <div v-if="user">Welcome back UserID: [{{ user.uid }}]</div>
+            <div v-if="user" title="user.id">Welcome back! {{ user.email || user.uid }}
+                <ui-button text="Sign Out" @click="logUserOut()"></ui-button>
+            </div>
             <ui-button v-if="!user" text="Sign In" @click="logUserIn()"></ui-button>
     </div>
 </template>
@@ -26,6 +28,13 @@ function logUserIn(){
     console.log("Loggin user in?");
     console.table(user);
     dbTools.log_in_anon();
+    console.table(user);
+    console.table(db);
+}
+function logUserOut(){
+    console.log("Loggin user out?");
+    console.table(user);
+    dbTools.log_out();
     console.table(user);
     console.table(db);
 }

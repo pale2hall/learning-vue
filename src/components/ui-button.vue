@@ -21,7 +21,7 @@ export default {
     display: inline-block;
     border:1px solid black;
     border-radius: .3rem;
-    margin:1rem;
+    // margin:1rem;
     padding:.3rem;
     background-color:$color30;
     text-decoration: none;

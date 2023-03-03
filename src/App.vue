@@ -8,14 +8,11 @@
     </div>
     <user-status></user-status>
   </nav>
-  <router-view />
+  <router-view class="content" />
 </template>
 
 <script setup>
-
-import { auth } from '@/firebase'
 import UserStatus from '@/components/user-status.vue'; 
-console.log(auth);
 
 </script>
 
@@ -65,6 +62,9 @@ h3 {
 
 nav a{
   color: $color10;
+}
+.content{
+  padding:1em 2rem;
 }
 
 nav{

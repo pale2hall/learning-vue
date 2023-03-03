@@ -1,6 +1,9 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore"
-import { signInAnonymously, getAuth } from "firebase/auth";
+import { 
+  signInAnonymously, 
+  getAuth, 
+  } from "firebase/auth";
 
 const firebaseApp = initializeApp({
   apiKey: "AIzaSyB5-u_pSw50BvlJPCKp27lw1wKj-_pJ7oM",
@@ -18,6 +21,9 @@ const firebaseAuth = getAuth(firebaseApp);
 const dbTools = {
   log_in_anon: function () {
     return signInAnonymously(firebaseAuth);
+  },
+  log_out: function () {
+    return firebaseAuth.signOut();
   },
 };
 
