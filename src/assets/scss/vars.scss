@@ -1,0 +1,16 @@
+
+$color60: #EFEEDA;
+$color30: #069ACE;
+$color10: #F32949;
+$accent: $color10;
+$textColorDark: #333;
+$textColorLight: #DDD;
+
+
+@mixin topGlow {
+    border-top:.3rem solid rgba(255,255,255,.4);
+}
+
+@mixin slightShadow {
+    filter: drop-shadow(1px 1px 2px #888);
+}
