@@ -6,6 +6,8 @@ $accent: $color10;
 $textColorDark: #333;
 $textColorLight: #DDD;
 
+$navTabHeight: .7rem;
+
 
 @mixin topGlow {
     border-top:.3rem solid rgba(255,255,255,.4);

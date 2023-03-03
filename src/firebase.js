@@ -1,6 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { useFirebaseAuth } from "vuefire";
+import { getFirestore } from "firebase/firestore"
 import { signInAnonymously, getAuth } from "firebase/auth";
 
 const firebaseApp = initializeApp({
@@ -14,7 +13,6 @@ const firebaseApp = initializeApp({
 });
 
 const db = getFirestore();
-const auth = useFirebaseAuth();
 const firebaseAuth = getAuth(firebaseApp);
 
 const dbTools = {
@@ -23,4 +21,4 @@ const dbTools = {
   },
 };
 
-export { firebaseApp, db, auth, dbTools };
+export { firebaseApp, db, dbTools, firebaseAuth};
