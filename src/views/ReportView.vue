@@ -12,7 +12,5 @@
   // @ is an alias to /src
   
   import PageHeading from '@/components/page-heading.vue';
-  import UiCard from '@/components/ui-card.vue';
-  import UiLink from '@/components/ui-link.vue';
   </script>
   

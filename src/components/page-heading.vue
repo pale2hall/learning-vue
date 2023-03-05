@@ -5,13 +5,14 @@
     </div>
 </template>
 
-<script>
-// @ is an alias to /src
-export default {
-    name: "PageHeading",
-    components: {},
-    props: ['title', 'desc'],
-};
+<script setup>
+import { defineProps } from 'vue';
+
+const props = defineProps({
+  title: String,
+  desc: String,
+})
+
 </script>
 
 <style scoped>
